@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/R_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="姓名："
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/R_tv_pnumber"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/R_et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:hint="请输入真实姓名"
+        android:inputType="text"
+        android:maxLength="11"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/R_tv_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/R_tv_pnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="手机号码："
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/R_tv_name"/>
+    <EditText
+        android:id="@+id/R_et_pnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:hint="请输入手机号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/R_tv_pnumber"
+        app:layout_constraintTop_toBottomOf="@id/R_et_name" />
+
+    <TextView
+        android:id="@+id/R_tv_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="密码："
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/R_tv_pnumber"
+        app:layout_constraintTop_toBottomOf="@id/R_tv_pnumber"/>
+
+    <EditText
+        android:id="@+id/R_et_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:hint="请输入密码"
+        android:inputType="number"
+        android:maxLength="8"
+        app:layout_constraintLeft_toRightOf="@id/R_tv_pwd"
+        app:layout_constraintTop_toBottomOf="@id/R_et_pnumber" />
+
+    <Button
+        android:id="@+id/btn_savedata"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="注   册"
+        android:textSize="25sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/R_tv_pwd"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
